@@ -62,15 +62,10 @@ img {
   height: auto;
 }
 
-.section {
-  padding: 0 156px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .container {
-  padding: 120px 0;
-  max-width: 1158px;
+  padding: 0 15px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .page-header {
@@ -83,13 +78,11 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 24px 0;
   gap: 76px;
 }
 
 .nav-list, .contacts-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -98,12 +91,16 @@ img {
 }
 
 .nav-list-item-link {
+  display: block;
   font-weight: var(--medium-font-weight);
+  padding: 24px 0;
 }
 
 .contacts-list-item-link {
+  display: block;
   color: var(--secondary-color);
   font-style: normal;
+  padding: 24px 0;
 }
 
 .contacts-list-item-link:hover,
@@ -114,9 +111,8 @@ img {
   color: var(--active-control-color);
 }
 
-.hero .container {
-  padding: 260px 0;
-  margin: 0 auto
+.hero {
+  padding: 188px 0;
 }
 
 .hero-header {
@@ -153,8 +149,12 @@ img {
   border-color: var(--active-control-color);
 }
 
-.advantages .container {
-  padding-bottom: 0;
+.advantages {
+  padding: 120px 0;
+}
+
+.features {
+  padding-bottom: 120px;
 }
 
 .section-header {
@@ -162,7 +162,7 @@ img {
   font-weight: var(--large-font-weight);
   line-height: 1.111;
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .visually-hidden {
@@ -181,29 +181,27 @@ img {
 
 .team {
   background-color: var(--secondary-background-color);
+  padding: 120px 0;
 }
 
 .team-card {
   text-align: center;
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
-  max-width: 264px;
 }
 
-.team-card .content-list-item-header {
-  padding-top: 32px;
+.team-card-description {
+  padding: 32px 0;
 }
 
-.portfolio-content .container {
-  padding-top: 96px;
+.portfolio-content {
+  padding: 96px 0 120px 0;
 }
 
 .controls-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  padding: 0 0 72px 0;
+  margin: 0 0 72px 0;
 }
 
 .controls-list-item-button {
@@ -233,8 +231,13 @@ img {
 .content-list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 24px;
+}
+
+.portfolio-content .content-list {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .content-list-item {
@@ -245,7 +248,7 @@ img {
   font-size: 20px;
   font-weight: var(--medium-font-weight);
   line-height: 1.2;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .content-list-item-text {
@@ -259,7 +262,7 @@ img {
 .portfolio-card-description {
   border: 1px solid var(--specific-border-color);
   border-top: 0;
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
 }
 
 .hero,
@@ -268,12 +271,12 @@ img {
   color: var(--primary-background-color);
 }
 
-.page-footer .container {
+.page-footer {
   padding: 100px 0;
 }
 
 .footer-logo {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .header-logo,
